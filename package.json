@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "npx live-server",
+    "build": "echo 'Building static site...'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
