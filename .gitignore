@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.log
+convert.py

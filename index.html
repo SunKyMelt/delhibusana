@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Busana - Pesona Pakaian Adat Indonesia</title>
+    <meta name="description" content="Toko dan tempat penyewaan pakaian adat dan busana tradisional Indonesia untuk wedding, Hari Kartini, dan photoshoot.">
+    <meta name="theme-color" content="#7A1C29">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="assets/images/hero.webp" as="image" type="image/webp">
+    
+    <!-- Google Fonts (display=swap already included for fast text rendering) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Delhi Busana</a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">Tentang Kami</a>
+                <a href="#collections" class="nav-link">Koleksi</a>
+                <a href="#contact" class="btn-primary-outline">Hubungi Kami</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-btn" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-link">Tentang Kami</a>
+        <a href="#collections" class="mobile-link">Koleksi</a>
+        <a href="#contact" class="mobile-link">Hubungi Kami</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Keanggunan Tradisi dalam Setiap Sulaman.</h1>
+                <p class="hero-desc">Delhi Busana menghadirkan koleksi busana adat Indonesia eksklusif untuk pernikahan, Hari Kartini, dan momen spesial Anda. Sewa atau beli dengan kualitas premium.</p>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn-primary">Lihat Koleksi</a>
+                    <a href="#about" class="btn-secondary">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="assets/images/hero.webp" alt="Elegan Kebaya Tradisional" class="hero-image" width="600" height="750" fetchpriority="high" decoding="async">
+                <div class="blob-bg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="section-header text-center">
+                <h2>Lebih Dekat dengan Kami</h2>
+                <p>Kami mendedikasikan diri untuk melestarikan keindahan Nusantara.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Wedding & Pre-wedding</h3>
+                    <p>Wujudkan pernikahan impian Anda dengan balutan busana adat autentik dan mewah yang memancarkan aura bangsawan.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Event Spesial</h3>
+                    <p>Tampil anggun dan percaya diri di acara peringatan seperti Hari Kartini dengan kebaya modern yang tetap menjunjung akar tradisi.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Photoshoot</h3>
+                    <p>Sewa koleksi busana profesional dengan detail menawan untuk kebutuhan fotografi komersial maupun pribadi.</p>
+                </div>
+            </div>
+
+            <!-- Tambahan Profil Menarik -->
+            <div class="section-header text-center" style="margin-top: 5rem;">
+                <h2>Nilai Eksklusif Delhi Busana</h2>
+                <p>Mengapa kami menjadi pilihan kebanggaan pelanggan nusantara?</p>
+            </div>
+            <div class="about-grid" style="margin-top: 2rem;">
+                <div class="about-card" style="background: var(--clr-bg); border: 1px solid var(--clr-accent);">
+                    <h3 style="color: var(--clr-accent);">✨ Material Kelas Satu</h3>
+                    <p>Setiap busana dirancang menggunakan sutra, brokat, dan songket pilihan yang jatuh sempurna dan sangat nyaman dikenakan.</p>
+                </div>
+                <div class="about-card" style="background: var(--clr-bg); border: 1px solid var(--clr-accent);">
+                    <h3 style="color: var(--clr-accent);">🌸 Jaminan Higienitas</h3>
+                    <p>Standar kebersihan yang ketat! Busana selalu dirawat dan dicuci secara profesional tiap sebelum dan sesudah disewa oleh pelanggan.</p>
+                </div>
+                <div class="about-card" style="background: var(--clr-bg); border: 1px solid var(--clr-accent);">
+                    <h3 style="color: var(--clr-accent);">👑 Keaslian Ornamen</h3>
+                    <p>Koleksi pusaka kami menjunjung tinggi pakem tradisi. Mulai dari mahkota siger, sortali, hingga paes dibuat rapi menyuguhkan kesan sakral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Koleksi Mahakarya</h2>
+                <p>Jelajahi spesifikasi dan detail ragam busana adat Nusantara kami yang dibuat dari bahan terbaik.</p>
+            </div>
+            <div class="catalog-tabs">
+                <button class="tab-btn active" data-filter="all">Semua</button>
+                <button class="tab-btn" data-filter="jawa">Jawa</button>
+                <button class="tab-btn" data-filter="sumatera">Sumatera</button>
+                <button class="tab-btn" data-filter="kalimantan">Kalimantan</button>
+                <button class="tab-btn" data-filter="bali">Bali & Nusa Tenggara</button>
+                <button class="tab-btn" data-filter="sulawesi">Sulawesi</button>
+                <button class="tab-btn" data-filter="nasional">Nasional</button>
+            </div>
+
+            <div class="collection-list">
+                <!-- Item 1: Jawa (Normal) -->
+                <div class="collection-item" data-category="jawa">
+                    <div class="collection-img-box">
+                        <div class="carousel-container" id="carousel-jawa">
+                            <div class="carousel-slide">
+                                <img src="assets/images/wedding.webp" alt="Pasangan Pengantin Jawa" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/wedding_3.webp" alt="Pengantin Wanita Jawa" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/wedding_4.webp" alt="Pengantin Pria Jawa" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/wedding_2.webp" alt="Detail Sulam Emas" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/wedding_5.webp" alt="Aksesoris Keris Jawa" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-dot active" aria-label="Pasangan" onclick="scrollToSlide('carousel-jawa', 0)"></button>
+                            <button class="carousel-dot" aria-label="Wanita" onclick="scrollToSlide('carousel-jawa', 1)"></button>
+                            <button class="carousel-dot" aria-label="Pria" onclick="scrollToSlide('carousel-jawa', 2)"></button>
+                            <button class="carousel-dot" aria-label="Detail Bahan" onclick="scrollToSlide('carousel-jawa', 3)"></button>
+                            <button class="carousel-dot" aria-label="Aksesoris" onclick="scrollToSlide('carousel-jawa', 4)"></button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Pengantin Adat Jawa Klasik</h3>
+                        <p class="desc">Aura ningrat terpancar melalui balutan beludru dan sulam benang emas. Dirancang mengikuti standarisasi pakaian adat keraton dengan pakem yang masih terjaga.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material:</strong> Bludru Premium import, Prada Emas asli, Batik Tulis Sotya.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Kebaya/Beskap, Kain Jarik, Selop, Aksesoris Lengkap.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 2: Minang (Reversed) -->
+                <div class="collection-item reversed" data-category="sumatera">
+                    <div class="collection-img-box">
+                        <div class="carousel-container" id="carousel-minang">
+                            <div class="carousel-slide">
+                                <img src="assets/images/minang.webp" alt="Baju Adat Minangkabau" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/minang_2.webp" alt="Detail Mahkota Suntiang" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-dot active" aria-label="Foto Utama" onclick="scrollToSlide('carousel-minang', 0)"></button>
+                            <button class="carousel-dot" aria-label="Detail Bahan" onclick="scrollToSlide('carousel-minang', 1)"></button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Adat Pernikahan Minangkabau</h3>
+                        <p class="desc">Kesan mewah dan berkelas dengan sentuhan merah terang dan emas. Kebaya Minang yang dilengkapi mahkota Suntiang yang agung sangat memukau untuk hari pernikahan Anda.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Beludru Merah Marun cerah dengan taburan bordiran Emas padat.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Gaun/Beskap Minang, Songket Balapak, Mahkota Suntiang (Wanita), Saluang (Pria), Aksesoris Gelang Lengkap.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 3: Bali (Normal) -->
+                <div class="collection-item" data-category="bali">
+                    <div class="collection-img-box">
+                        <div class="carousel-container" id="carousel-bali">
+                            <div class="carousel-slide">
+                                <img src="assets/images/bali.webp" alt="Baju Adat Payas Agung Bali" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/bali_2.webp" alt="Detail Mahkota Payas Agung" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-dot active" aria-label="Foto Utama" onclick="scrollToSlide('carousel-bali', 0)"></button>
+                            <button class="carousel-dot" aria-label="Detail Bahan" onclick="scrollToSlide('carousel-bali', 1)"></button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Payas Agung Kerajaan Bali</h3>
+                        <p class="desc">Memancarkan aura ningrat khas pulau dewata. Dibalut dengan kain prada dan mahkota menjulang yang menghadirkan keagungan tingkat tinggi.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Songket Bali Prada Emas asli, balutan warna warni vibran khas Pulau Dewata.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Kain Songket Prada, Mahkota Payas Agung (Gelungan), Gelang Kana, Sabuk Emas, Kris (Pria).
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 4: Bugis (Reversed) -->
+                <div class="collection-item reversed" data-category="sulawesi">
+                    <div class="collection-img-box">
+                        <div class="carousel-container" id="carousel-bugis">
+                            <div class="carousel-slide">
+                                <img src="assets/images/bugis.webp" alt="Baju Bodo Adat Bugis Makassar" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/bugis_2.webp" alt="Detail Baju Bodo" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-dot active" aria-label="Foto Utama" onclick="scrollToSlide('carousel-bugis', 0)"></button>
+                            <button class="carousel-dot" aria-label="Detail Bahan" onclick="scrollToSlide('carousel-bugis', 1)"></button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Bodo Khas Bugis Makassar</h3>
+                        <p class="desc">Dikenal sebagai salah satu pakaian tradisional tertua di dunia, Baju Bodo modern kami pertahankan keasliannya dengan warna-warna cerah dan kilauan perhiasan emas yang mewah.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Sutra Bugis (Sengkang) warna Magenta dan Hijau. Sangat ringan namun elegan berkilau.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Baju Bodo, Sarung Sutra, Perhiasan Rantai Koin Emas, Mahkota Bunga (Wanita), Jas Tutu (Pria).
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 5: Kalimantan (Normal) -->
+                <div class="collection-item" data-category="kalimantan">
+                    <div class="collection-img-box">
+                        <div class="carousel-container" id="carousel-kalimantan">
+                            <div class="carousel-slide">
+                                <img src="assets/images/kalimantan.webp" alt="Pengantin Adat Banjar" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/kalimantan_2.webp" alt="Detail Busana Banjar" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-dot active" aria-label="Foto Utama" onclick="scrollToSlide('carousel-kalimantan', 0)"></button>
+                            <button class="carousel-dot" aria-label="Detail Bahan" onclick="scrollToSlide('carousel-kalimantan', 1)"></button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Pengantin Adat Banjar, Kalimantan</h3>
+                        <p class="desc">Kesan mewah dan anggun dari pulau kalimantan. Balutan warna cerah yang kaya akan unsur keemasan, menghadirkan nuansa hangat dan mempesona untuk hari bahagia Anda.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Satin Premium dan Beludru, warna dasar kuning cerah dan merah berhias sulam emas.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Kebaya/Beskap, Mahkota (Wanita), Laung (Pria), serta aksesoris khas Banjar Nusantara.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 6: Kartini (Reversed) -->
+                <div class="collection-item reversed" data-category="nasional">
+                    <div class="collection-img-box">
+                        <div class="carousel-container" id="carousel-kartini">
+                            <div class="carousel-slide">
+                                <img src="assets/images/kartini.webp" alt="Kebaya Wanita" loading="lazy">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/kartini_male.webp" alt="Beskap Pria" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-dot active" aria-label="Wanita" onclick="scrollToSlide('carousel-kartini', 0)"></button>
+                            <button class="carousel-dot" aria-label="Pria" onclick="scrollToSlide('carousel-kartini', 1)"></button>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Kebaya & Beskap Modern Nasional</h3>
+                        <p class="desc">Tersedia pasangan selaras untuk wanita dan pria. Memadukan kenyamanan modern dengan siluet klasik. Cocok untuk Anda berdua yang ingin tampil elegan, ringkas, dan memukau.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Pilihan Velvet Maroon (Burgundy) atau Navy Blue dengan sulam benang emas/perak. Brokat Prancis premium untuk wanita.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Kebaya/Beskap, Bawahan Batik Jarik, Selendang/Aksesoris Senada.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 7: Sunda Siger (Jawa) -->
+                <div class="collection-item" data-category="jawa">
+                    <div class="collection-img-box">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/images/sunda_siger.webp" alt="Pengantin Sunda Siger" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Kebaya Pengantin Sunda Siger</h3>
+                        <p class="desc">Kesan syahdu nan anggun khas tatar Sunda. Balutan kebaya mewah dengan paduan mahkota Siger dan ronce melati yang memancarkan pesona pengantin Parahyangan.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Brokat premium putih-perak bertabur manik-manik.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Kebaya, Bawahan Batik, Mahkota Siger, 7 Kembang Goyang.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 8: Batak Toba Ulos (Sumatera) -->
+                <div class="collection-item reversed" data-category="sumatera">
+                    <div class="collection-img-box">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/images/batak_toba.webp" alt="Pengantin Batak Toba" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Adat Ulos Batak Toba</h3>
+                        <p class="desc">Pesona keanggunan Danau Toba. Menampilkan lilitan kain tenun tradisional Ulos bernuansa merah, hitam, dan emas yang melambangkan kebesaran serta keberanian.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Benang tenun padat khas Ulos dengan kombinasi merah menyala dan corak emas.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Selempang Ulos premium, Ikat kepala Sortali emas (Wanita), tali-tali (Pria), dan perhiasan nuansa etnik.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 9: Dayak Kenyah (Kalimantan) -->
+                <div class="collection-item" data-category="kalimantan">
+                    <div class="collection-img-box">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/images/dayak_kenyah.webp" alt="Baju Adat Dayak Kenyah" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Adat Dayak Kenyah, Kalimantan</h3>
+                        <p class="desc">Kecantikan alam rimba Borneo! Terdiri dari ukiran manik-manik tradisional berwarna cerah di atas kain velvet pekat serta mahkota eksotis dengan ornamen bulu enggang.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Velvet hitam dengan Sulam Manik Khas Kenyah multi-warna.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Sapai (Baju Pria/Wanita), Ta'a/Sirat, Mahkota Bulu Enggang Asli/Sintetis.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 10: Bali Prada (Bali) -->
+                <div class="collection-item reversed" data-category="bali">
+                    <div class="collection-img-box">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/images/bali_prada.webp" alt="Kebaya Modern Bali" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Kebaya Modifikasi Bali & Selendang Prada</h3>
+                        <p class="desc">Pernikahan gaya modern-tradisional. Kebaya pas badan dipadukan dengan selendang/kain bermotif Prada (kain berlapis prada emas) yang bersinar.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Lace Bordir halus, Kain Songket/Endek motif Prada emas.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Kebaya Bali, Kamen/Bawahan prada, Sabuk Prasi, Hiasan Rambut Bunga Emas.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Item 11: Gorontalo Bili'u (Sulawesi) -->
+                <div class="collection-item" data-category="sulawesi">
+                    <div class="collection-img-box">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="assets/images/gorontalo_biliu.webp" alt="Baju Adat Bili'u Gorontalo" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Baju Adat Bili'u Gorontalo, Sulawesi</h3>
+                        <p class="desc">Balutan busana Bili'u yang megah tiada tara! Menawarkan nuansa warna cerah mencolok dengan kombinasi rentetan perhiasan emas bertingkat dari ujung rambut hingga kaki.</p>
+                        
+                        <div class="specs">
+                            <div class="spec-item">
+                                <strong>Material / Warna:</strong> Sutra campuran dan Beludru cerah dengan lempeng logam penyepuh emas.
+                            </div>
+                            <div class="spec-item">
+                                <strong>Kelengkapan:</strong> Baju lengan pendek berlapis, Mahkota Bili'u Bertingkat Tinggi, Sabuk Kalung Emas.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-box">
+                <h2>Rencanakan Penampilan Terbaik Anda</h2>
+                <p>Tim ahli kami siap membantu Anda menyesuaikan ukuran dan memilih busana yang paling pas untuk momen penting Anda.</p>
+                <div class="contact-methods">
+                    <div class="method">
+                        <span class="method-title">Telepon / WhatsApp</span>
+                        <a href="tel:+6287711995801" class="method-value">+62 877-1199-5801</a>
+                    </div>
+                    <div class="method">
+                        <span class="method-title">Email</span>
+                        <a href="mailto:halo@delhibusana.id" class="method-value">halo@delhibusana.id</a>
+                    </div>
+                    <div class="method">
+                        <span class="method-title">Alamat Butik</span>
+                        <span class="method-value">Jl. Raya Kebaya No. 12, Jakarta</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/6287711995801" class="btn-primary btn-large">Hubungi Konsultan Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">Delhi Busana</a>
+                <p>&copy; 2026 Delhi Busana. Hak Cipta Dilindungi.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">Tentang Kami</a>
+                <a href="#collections">Koleksi</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send/?phone=6287711995801&text=Halo%20Delhi%20Busana,%20saya%20tertarik%20dengan%20koleksi%20katalog%20busana%20adatnya.%20Bisa%20bantu%20saya?" class="floating-wa" target="_blank" aria-label="Chat WhatsApp">
+        <svg fill="#ffffff" viewBox="0 0 24 24" width="28px" height="28px"><path d="M19.056 4.905C17.18 3.024 14.678 2 12 2 6.477 2 2 6.477 2 12c0 1.765.46 3.486 1.334 5L2 22l5.127-1.346A9.957 9.957 0 0012 22c5.522 0 10-4.477 10-10 0-2.678-1.042-5.195-2.944-7.095zM12 20.316c-1.492 0-2.95-.4-4.232-1.156l-.304-.18-3.147.825.84-3.07-.198-.314A8.272 8.272 0 013.684 12c0-4.588 3.731-8.316 8.316-8.316 2.227 0 4.318.868 5.895 2.444A8.257 8.257 0 0120.316 12c0 4.588-3.732 8.316-8.316 8.316zM16.57 14.076c-.25-.125-1.488-.735-1.718-.818-.23-.084-.4-.125-.568.125-.168.25-.65 1.05-.795 1.258-.146.21-.293.235-.544.11-.25-.125-1.06-.39-2.02-1.246-.747-.665-1.252-1.488-1.398-1.738-.146-.25-.015-.386.11-.512.113-.113.25-.292.375-.438.125-.147.168-.25.25-.418.084-.168.042-.315-.02-.44-.063-.126-.568-1.368-.778-1.87-.205-.494-.413-.427-.568-.435-.146-.008-.314-.01-.482-.01-.168 0-.44.062-.67.313-.23.25-.88 .86-.88 2.096 0 1.236.902 2.43 1.028 2.597.126.168 1.77 2.7 4.288 3.786 2.08 .876 2.446.885 2.872.82.495-.075 1.488-.607 1.698-1.194.21-.587.21-1.092.146-1.194-.062-.104-.23-.167-.48-.292z"></path></svg>
+        <span>Pesan / Tanya Kami</span>
+    </a>
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
