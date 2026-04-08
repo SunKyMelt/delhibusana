@@ -1,0 +1,22 @@
+{
+  "name": "delhi-busana",
+  "version": "1.0.0",
+  "description": "Luxury Landing Page for Delhi Busana - Catalog of Traditional Indonesian Clothing",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunKyMelt/delhibusana.git"
+  },
+  "keywords": [
+    "busana-adat",
+    "landing-page",
+    "indonesia",
+    "luxury"
+  ],
+  "author": "SunKyMelt",
+  "license": "MIT"
+}
