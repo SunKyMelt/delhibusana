@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Tidak Ditemukan - Delhi Busana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .error-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: var(--clr-cream-bg);
+            padding: 2rem;
+        }
+        .error-content {
+            max-width: 600px;
+        }
+        .error-code {
+            font-family: var(--font-heading);
+            font-size: clamp(6rem, 15vw, 10rem);
+            color: var(--clr-accent);
+            line-height: 1;
+            margin-bottom: 1rem;
+            opacity: 0.2;
+        }
+        .error-title {
+            margin-bottom: 1.5rem;
+        }
+        .error-message {
+            color: var(--clr-text-light);
+            margin-bottom: 2.5rem;
+            font-size: 1.125rem;
+        }
+        .back-home {
+            transition: var(--transition);
+        }
+    </style>
+</head>
+<body>
+    <section class="error-section">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Keindahan yang Terlewatkan.</h1>
+            <p class="error-message">Maaf, halaman yang Anda cari tidak dapat ditemukan. Mungkin alamat yang dimasukkan salah atau halaman telah berpindah tempat.</p>
+            <a href="index.html" class="btn-primary btn-large back-home">Kembali ke Beranda</a>
+        </div>
+    </section>
+</body>
+</html>

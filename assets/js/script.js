@@ -115,9 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-
-
-    // 7. Catalog Tab Filter
+    // 6. Catalog Tab Filter
     const tabBtns = document.querySelectorAll('.tab-btn');
     const collectionItems = document.querySelectorAll('.collection-item');
 
