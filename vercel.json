@@ -33,13 +33,16 @@
   ],
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
+    { "src": "404.html", "use": "@vercel/static" },
     { "src": "assets/**", "use": "@vercel/static" },
     { "src": "package.json", "use": "@vercel/static" },
-    { "src": "README.md", "use": "@vercel/static" }
+    { "src": "README.md", "use": "@vercel/static" },
+    { "src": "robots.txt", "use": "@vercel/static" },
+    { "src": "sitemap.xml", "use": "@vercel/static" }
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
 }
 
